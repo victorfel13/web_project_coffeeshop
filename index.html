@@ -42,22 +42,31 @@
             </li>
           </ul>
         </nav>
-        <div class="header__content">
-          <h1 class="header__title">Café de especialidad</h1>
-          <div class="header__title">en Triple Peaks</div>
-          <p class="header__description">
-            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-            para darte energía y motivar tu creatividad.
-          </p>
-        </div>
 
+        <h1 class="header__title">
+          <span class="span-accent">Café de especialidad</span><br />
+          <span>en Triple Peaks</span>
+        </h1>
+
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
         <img
           src="images/inside_coffee_shop.png"
           alt="Interior de la cafetería Triple Peaks"
           class="header__image"
         />
-
-        <footer class="header__hours">
+        <footer
+          class="header__hours"
+          style="
+            position: absolute;
+            bottom: 40px;
+            left: 80px;
+            width: calc(100% - 80px);
+            margin: 0;
+          "
+        >
           <div>
             <div class="header__list">
               <p class="header__paragraph">Horario:</p>
@@ -69,7 +78,10 @@
               </p>
             </div>
           </div>
-          <p class="header__paragraph">
+          <p
+            class="header__paragraph"
+            style="position: absolute; right: 80px; bottom: 0px"
+          >
             Avenida del Éxito 200, Ciudad Triple Peaks
           </p>
         </footer>
