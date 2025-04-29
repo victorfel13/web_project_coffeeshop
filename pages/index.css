@@ -203,27 +203,26 @@ margin: 0 0 0 80px;
                        background-repeat: no-repeat;
                    }
         
-                   .reservation__section {
+                                  /*.reservation__section {
                        display: flex;
                        flex-direction: column;
                        align-items: center;
                        background-color: #dbeafe;
-                       /* azul claro del fondo */
+                       /* azul claro del fondo 
                        padding: 100px 20px;
                        min-height: 100vh;
-                   }
+                   }*/
         
                    /* Título */
                    .reservation__title {
-                       font-family: Inter, sans-serif;
-                       font-size: 44px;
+                       font-family: Inter;
+                       font-style: normal;
                        font-weight: 500;
+                       font-size: 44px;
                        text-align: center;
-                    line-height:52px;
-                     margin-top: 100px;
-                     margin-left: auto;
-                     margin-right: auto;
-                     margin-bottom: 80px;
+                       line-height:52px;
+                       margin-top: 100px;
+                       
                    }
         
                    /* Formulario */
@@ -233,76 +232,70 @@ margin: 0 0 0 80px;
                        padding: 32px;
                        border-radius: 0px;
                        box-sizing: border-box;
-                        margin-bottom: 40px;
+                    margin-bottom: 40px;
                    }
+                    .form {
+                        max-width: 385px;
+                        justify-items: center;
+                    }
+                    .form__fieldset {
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                    }
         
-                   .form__fieldset {
-                       border: none;
-                       padding: 0;
-                       margin: 0;
-                       display: flex;
-                       flex-direction: column;
-                       gap: 32px;
-                   }
-        
-                   .form-group {
-                       display: flex;
-                       flex-direction: column;
-                   }
-        
+                 
                    /* Etiquetas */
                    .form__label {
-                       font-family: 'Inter', sans-serif;
+                       font-family: 'Inter';
                        font-style: normal;
                        font-weight: 500;
                        font-size: 16px;
                        line-height: 20px;
-                       color: #000000;
-                       display: block;
-                       margin-bottom: 8px;
+                     
                    }
         
                    label {
-                       margin-bottom: 8px;
+                   /*    margin-bottom: 32px;*/
                        font-size: 16px;
                        font-weight: 400;
                    }
         
                    /* Campos de entrada */
-                   input,
-                   select {
-                       padding: 12px;
-                       font-size: 16px;
-                       border: 1px solid #ccc;
-                       border-radius: 4px;
-                       font-family: Inter, sans-serif;
-                   }
-        
-                   input[type="checkbox"] {
-                       width: 20px;
-                       height: 20px;
-                   }
+                                   .form__input {
+                                       font-family: inherit;
+                                       font-style: normal;
+                                       font-weight: normal;
+                                       font-size: 20px;
+                                       line-height: 30px;
+                                       box-sizing: border-box;
+                                       width: 100%;
+                                       height: 60px;
+                                       padding: 15px 20px;
+                                       border-radius: 4px;
+                                       border: 1px solid;
+                                       margin-top: 8px;
+                                       margin-bottom: 32px;
+                                   }
         
                    .form__checkbox {
                        margin-right: 10px;
                        border-radius: 2px;
                    }
         
+                                   .form-group {
+                                    margin-bottom: 32px;
+                                   }
                    /* Botón */
                    .form__button {
-                       padding: 14px;
-                       background-color: #3b82f6;
-                       color: white;
-                       border: none;
-                       border-radius: 4px;
-                       cursor: pointer;
-                       font-family: Inter;
-                       font-style: normal;
-                       font-weight: 500;
-                       font-size: 16px;
-                       line-height: 20px;
-                       width: 100%;
-                       transition: opacity 0.3s;
+                    display: block;
+                        margin-bottom: 32px;
+                        width: 100%;
+                        height: 60px;
+                        color: #ffffff;
+                        background-color: #2f80ed;
+                        border-radius: 4px;
+                        border: 1px solid;
                    }
         
                    .form__button:hover {
