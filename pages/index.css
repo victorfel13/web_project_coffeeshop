@@ -187,63 +187,65 @@ margin: 0 0 0 80px;
    }
 
            /* Apartir de aquí estoy trabajando */
-.reservation {
-    background-color: #D9E7FF;
-    /* Color de fondo de respaldo */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* Centra contenido horizontalmente */
-  
-    /* Centra contenido verticalmente (opcional) */
-    height: 100vh;
-    min-height: 720px;
-    max-height: 800px;
-    box-sizing: border-box;
 
-    /* Imagen de fondo */
-    background-image: url("../images/background_reservation.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-           .reservation__title {
-               text-align: center;
-            font-family: Inter;
-            
-                font-style: normal;
-            
-                font-weight: 500;
-            
-                font-size: 44px;
-            
-                line-height: 52px;
-                padding: top: 100px;
-           }
-    
-           .reservation__form {
-             
-               max-width: 500px;
-              
-           }
-    
-           .form__fieldset {
-               border: none;
-               
-               display: flex;
-               flex-direction: column;
-               gap: 15px;
-             
-            max-width: 385px;
-           }
-    
-
-
-           .form-group{
-            margin-bottom: 32px;
-           }
+                   /* Sección principal */
+                   .reservation {
+                       background-color: #D9E7FF;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       height: 100vh;
+                       box-sizing: border-box;
+                       background-image: url("../images/background_reservation.svg");
+                       background-size: cover;
+                       background-position: center;
+                       background-repeat: no-repeat;
+                   }
+        
+                   .reservation__section {
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       background-color: #dbeafe;
+                       /* azul claro del fondo */
+                       padding: 100px 20px;
+                       min-height: 100vh;
+                   }
+        
+                   /* Título */
+                   .reservation__title {
+                       font-family: Inter, sans-serif;
+                       font-size: 44px;
+                       font-weight: 500;
+                       text-align: center;
+                       margin-bottom: 40px;
+                   }
+        
+                   /* Formulario */
+                   .reservation__form {
+                       max-width: 385px;
+                       width: 100%;
+                       padding: 32px;
+                       border-radius: 0px;
+                       box-sizing: border-box;
+                   }
+        
+                   .form__fieldset {
+                       border: none;
+                       padding: 0;
+                       margin: 0;
+                       display: flex;
+                       flex-direction: column;
+                       gap: 32px;
+                   }
+        
+                   .form-group {
+                       display: flex;
+                       flex-direction: column;
+                   }
+        
+                   /* Etiquetas */
                    .form__label {
                        font-family: 'Inter', sans-serif;
                        font-style: normal;
@@ -253,54 +255,59 @@ margin: 0 0 0 80px;
                        color: #000000;
                        display: block;
                        margin-bottom: 8px;
-                
                    }
-    
-
-                   .form__input {
-                       padding: 10px;
-                       border-radius: 4px;
-                       /* Debe ser 4px de border-radius como pedían */
-                       font-family: 'Inter', sans-serif;
-                       font-style: normal;
-                       font-weight: 400;
-                       /* normal = 400 */
-                       font-size: 20px;
-                       line-height: 30px;
-                       color: #6F6F6F;
         
-                       display: block;
-                       width: 100%;
-                    padding: 15px 20px;
-                       /* Para que el input ocupe todo el ancho disponible */
-                      
-                       /* Espacio hacia el siguiente label */
+                   label {
+                       margin-bottom: 8px;
+                       font-size: 16px;
+                       font-weight: 400;
                    }
-    
-           .form__checkbox {
-               margin-right: 10px;
-               border-radius: 2px;
-           }
-    
-           .form__button {
-               padding: 10px;
-               background-color: #2F80ED;
-               color: white;
-               border: none;
-               border-radius: 4px;
-               cursor: pointer;
-               transition: opacity 0.3s;
-            font-family: Inter;
-            
-                font-style: normal;
-            
-                font-weight: 500;
-            
-                font-size: 16px;
-            
-                line-height: 20px;
-           }
-    
-           .form__button:hover {
-               opacity: 0.7;
-           }
+        
+                   /* Campos de entrada */
+                   input,
+                   select {
+                       padding: 12px;
+                       font-size: 16px;
+                       border: 1px solid #ccc;
+                       border-radius: 4px;
+                       font-family: Inter, sans-serif;
+                   }
+        
+                   input[type="checkbox"] {
+                       width: 20px;
+                       height: 20px;
+                   }
+        
+                   .form__checkbox {
+                       margin-right: 10px;
+                       border-radius: 2px;
+                   }
+        
+                   /* Botón */
+                   .form__button {
+                       padding: 14px;
+                       background-color: #3b82f6;
+                       color: white;
+                       border: none;
+                       border-radius: 4px;
+                       cursor: pointer;
+                       font-family: Inter;
+                       font-style: normal;
+                       font-weight: 500;
+                       font-size: 16px;
+                       line-height: 20px;
+                       width: 100%;
+                       transition: opacity 0.3s;
+                   }
+        
+                   .form__button:hover {
+                       opacity: 0.7;
+                   }
+        
+                   /* Consentimiento */
+                   .form__consent {
+                       display: flex;
+                       align-items: center;
+                       font-size: 14px;
+                       gap: 8px;
+                   }
