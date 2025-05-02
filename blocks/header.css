@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 720px;
+    max-height: 800px;
+    box-sizing: border-box;
+    background-image: url("../images/background_header.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 72px;
+    letter-spacing: 1px;
+    max-width: 709px;
+    margin: 183px 0 20px 80px;
+}
+
+.header__description {
+    max-width: 683px;
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 0 80px;
+}
+
+.header__paragraph {
+    margin: 0;
+}
+
+.header__image {
+    position: absolute;
+    top: 124px;
+    bottom: 124px;
+    right: 5px;
+    width: 646px;
+    height: 568px;
+}
+
+.span-accent {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 72px;
+    color: #2F80ED;
+}
