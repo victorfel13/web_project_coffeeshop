@@ -26,3 +26,11 @@
     text-decoration: none;
     color: #000;
 }
+.nav_link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav_link:hover {
+    color: #2F80ED;
+}
