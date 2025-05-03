@@ -52,7 +52,7 @@ margin: 4px 0;
   bottom: 40px;
   left: 80px;
   width: calc(100% - 160px);
-ffont-family: "Inter", sans-serif;
+font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -60,9 +60,9 @@ ffont-family: "Inter", sans-serif;
     color: #838383;
 }
 
-.header__paragraph--address {
+/*.header__paragraph--address {
     position: absolute;
     right: 0;
     bottom: 0;
     text-align: right;
-}
+}*/
