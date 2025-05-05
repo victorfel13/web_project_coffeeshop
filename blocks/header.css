@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .header__title {
@@ -48,7 +49,7 @@ margin: 4px 0;
 }
 
 .header__footer {
-     position: absolute;
+    position: absolute;
   bottom: 40px;
   left: 80px;
   width: calc(100% - 160px);
